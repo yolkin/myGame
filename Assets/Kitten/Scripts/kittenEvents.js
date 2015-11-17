@@ -14,4 +14,5 @@ function Update () {
 	if(Input.GetKey ("m")){
 		GetComponent.<Animation>().Play("Meow");
 	}
+
 }
