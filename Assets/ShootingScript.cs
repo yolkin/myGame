@@ -3,7 +3,8 @@ using System.Collections;
 
 public class ShootingScript : MonoBehaviour {
 	public Rigidbody projectile;
-	public float speed = 20;
+	public float speed = 15;
+	public AudioSource shoot;
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +17,7 @@ public class ShootingScript : MonoBehaviour {
 			Rigidbody clone;
 			clone = Instantiate(projectile, transform.position, transform.rotation) as Rigidbody;
 			clone.velocity = transform.TransformDirection(Vector3.forward * speed);
+			shoot.Play();
 
 			Destroy(clone.gameObject, 3);
 		}
