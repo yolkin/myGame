@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ShootingScript : MonoBehaviour {
+public class ShotingScript : MonoBehaviour {
 	public Rigidbody projectile;
 	public float speed = 15;
 	public AudioSource shoot;
